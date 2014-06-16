@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery-git2.js"></script>
+    <script type="text/javascript" src="jquery.qrcode.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+    <script type="text/javascript" src="getQr.js"></script>
+    <style type="text/css">
+        body {
+            width: 200px;
+            height: 200px;
+            margin: 0;
+        }
+
+        #qr {
+            display: block;
+        }
+
+        #qr_fav {
+            position: absolute;
+            display: none;
+            left: 45%;
+            top: 38%;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border: 4px solid #495561;
+        }
+
+        p {
+            text-align: center;
+        }
+        #copyright{
+            margin: 0;
+            text-shadow: 1px 4px 2px #999;
+            color: #333;
+            text-align: center;
+            font-family: "微软雅黑";
+            border-top: 2px solid #495561;
+        }
+    </style>
+</head>
+<body>
+<div id="qr"></div>
+
+<img id="qr_fav" src=""/>
+<p id="copyright">Developed by wtser</p>
+</body>
+</html>
