@@ -2,15 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <script type="text/javascript" src="jquery-git2.js"></script>
-    <script type="text/javascript" src="jquery.qrcode.js"></script>
-    <script type="text/javascript" src="qrcode.js"></script>
-    <script type="text/javascript" src="getQr.js"></script>
+    <script type="text/javascript" src="index.js"></script>
     <style type="text/css">
-      body {
-        width: 200px;
-      }
-
       #qr {
         display: block;
       }
@@ -18,12 +11,18 @@
       #qr_fav {
         position: absolute;
         display: none;
-        left: 45%;
-        top: 38%;
-        width: 24px;
-        height: 24px;
+        left: 50%;
+        top: 50%;
         background: #fff;
-        border: 4px solid #495561;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+      #qr_fav_img {
+        width: 32px;
+        height: 32px;
+        border: 8px solid #fff;
       }
 
       p {
@@ -41,8 +40,8 @@
   </head>
   <body>
     <div id="qr"></div>
-
-    <img id="qr_fav" src="" />
-    <p id="copyright">Developed by wtser</p>
+    <div id="qr_fav">
+      <img id="qr_fav_img" src="" />
+    </div>
   </body>
 </html>
