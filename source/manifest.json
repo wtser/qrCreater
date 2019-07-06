@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "qrCreater - 网址二维码一键生成工具",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "permissions": ["tabs"],
     "description": "用于生成地址栏网址的二维码图片",
     "icons": {
