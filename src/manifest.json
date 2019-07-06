@@ -5,11 +5,11 @@
     "permissions": ["tabs"],
     "description": "用于生成地址栏网址的二维码图片",
     "icons": {
-        "128": "icon/icon_128.png",
-        "32": "icon/icon_32.png"
+        "128": "icon/qrcode.png",
+        "32": "icon/qrcode.png"
     },
     "browser_action": {
-        "default_icon": "icon/default-big.png",
+        "default_icon": "icon/qrcode.png",
         "default_title": "qrCreater - 网址二维码一键生成工具",
         "default_popup": "index.html"
     }
