@@ -7,7 +7,7 @@ chrome.tabs.getSelected(null, function(tab) {
     $qrInput = document.getElementById("qrInput");
   $qr.innerHTML = "";
   $qrInput.value = tab.url;
-  $qr.appendChild(kjua({ text: tab.url, size: 240 }));
+  $qr.appendChild(kjua({ text: tab.url, size: 300, crisp: false }));
 
   if (tab.favIconUrl && tab.favIconUrl.substr(0, 4) == "http") {
     $qrFavImg.src = tab.favIconUrl;
