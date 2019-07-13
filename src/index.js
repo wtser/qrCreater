@@ -14,7 +14,12 @@ chrome.tabs.getSelected(null, function(tab) {
     $qrFav.style.display = "block";
   }
 
-  $qrInput.onclick = e => {
+  $qrInput.onmouseenter = e => {
     e.target.select();
+  };
+
+  $qrInput.onkeyup = e => {
+    $qr.innerHTML = "";
+    $qr.appendChild(kjua({ text: e.target.value, size: 300, crisp: false }));
   };
 });
